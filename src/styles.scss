@@ -1,1 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+
+h1{
+  font: 50px;
+}
+
+dd{
+  font-size: 2rem;
+  font-weight: bold;
+}
+.card {
+  border-radius: 10px; /* Bordes redondeados para la tarjeta */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Borde elevado */
+  overflow: hidden; /* Ocultar el desbordamiento de la sombra */
+  width: 500px; /* Ancho de la tarjeta */
+}
+
+.grid-container {
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 20px; /* Espacio entre filas */
+}
+

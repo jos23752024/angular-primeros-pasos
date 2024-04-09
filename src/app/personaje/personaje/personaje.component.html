@@ -1,0 +1,25 @@
+<div class="card my-5">
+  <div class="container pt-2">
+    <h3>Personaje</h3>
+    <hr />
+    <ul class="list-group">
+      @for (Personaje of personajes; track $index) {
+      <li
+        class="list-group-item d-flex justify-content-between align-items-center"
+      >
+        <div>
+          <span class="text-primary">{{ $index + 1 }}. </span>
+          <span>{{ Personaje.nombre }} </span> -
+          <strong> {{ Personaje.poder }} </strong>
+        </div>
+        <button
+          (click)="onDeleteCharacter(Personaje.id)"
+          class="btn btn-danger"
+        >
+          X
+        </button>
+      </li>
+      }
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<h1>los personajes de "The Matrix"</h1>
+<hr />
+
+<div class="row">
+  <div class="col">
+    <app-personaje
+      [listadopersonajes]="servicesService.personajes"
+      (onDelete)="servicesService.deleteCharacterById($event)"
+    />
+  </div>
+
+  <div class="col">
+    <app-agregar
+      (onNuevoPersonaje)="servicesService.onNuevoPersonaje($event)"
+    />
+  </div>
+</div>

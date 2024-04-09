@@ -1,0 +1,26 @@
+<div class="card my-5">
+  <div class="container pt-2">
+    <h3>Agregar <small>Personaje</small></h3>
+    <hr />
+
+    <form class="row" (ngSubmit)="agregar()">
+      <input
+        [(ngModel)]="nuevoPersonaje.nombre"
+        class="form-control m-2"
+        type="text"
+        placeholder="Nombre"
+        name="nombre"
+      />
+
+      <input
+        [(ngModel)]="nuevoPersonaje.poder"
+        class="form-control m-2"
+        type="number"
+        placeholder="Poder"
+        name="poder"
+      />
+
+      <button type="submit" class="btn btn-primary">Agregar</button>
+    </form>
+  </div>
+</div>
